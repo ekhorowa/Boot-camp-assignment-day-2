@@ -2,7 +2,7 @@
 'use strict';
 var chai = require('chai');
 var expect = chai.expect;
-var Car = require('../apps/library.js');
+var Car = require('../apps/carClass.js');
 describe("Car Class: Create a car, make it drive", function() {
 
  it("The car should be a type of `object`, and an instance of the `Car` class", function() {
