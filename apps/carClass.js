@@ -1,45 +1,25 @@
-module.exports = function(name, model, type){
-this.type = type;
-this.model = model;
+function Human (name, age, gender, height, skin_color){
 this.name = name;
-if(this.name === undefined){
- this.name = 'General';
- this.model = 'GM';
- return{
-   name: this.name, 
-   model: this.model
- };
+this.age = age;
+this.gender = gender;
+this.height = height;
+this.skin_color = skin_color;
 }
-if(this.name === 'Porshe' || this.name === 'Koenigsegg'){
- this.numOfDoors = 2;
- return this.numOfDoors;
+Human.prototype.isEating = function(){
+
+};
+Human.prototype.isWalking = function (){
+
 }
-else{
- this.numOfDoors = 4;
- return this.numOfDoors;
+Human.prototype.isDancing = function (){
+
+};
+function Doctor(name, age, gender, height, skin_color){
+	human.call(this, name, age, gender, height, skin_color);
+
 }
-if(this.type != 'trailer'){
- this.numOfWheels = 4;
- return this.numOfWheels;
+
+var doctor1 = new Doctor(John, 30, male, ){
+
 }
-else{
- this.numOfWheels = 8;
- this.isSaloon = false;
- return{
-   numOfWheels: this.numOfWheels,
-   isSaloon: this.isSaloon
- };
-}
-if(this.type === 'trailer'){    
- this.speed = '0 km/h';
-}
-this.drive = function(speed){
- this.speed = speed;
- if(this.speed == 5){
-   return this.speed = '77 km/h';
- }
- else if(this.speed == 7){
-   return this.speed = "250 km/h";
- }
-}
-}
+
